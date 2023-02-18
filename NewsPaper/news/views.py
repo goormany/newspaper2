@@ -1,5 +1,6 @@
 from datetime import datetime
 from django.shortcuts import render
+from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, DeleteView, UpdateView
 from .models import Post
@@ -8,6 +9,7 @@ from .forms import PostForm
 
 
 class NewsList(ListView):
+    raise_exception = True
     model = Post
     template_name = 'news_list.html'
     context_object_name = 'news'
@@ -21,6 +23,7 @@ class NewsList(ListView):
 
 
 class NewsSearch(ListView):
+    raise_exception = True
     model = Post
     template_name = 'news_search.html'
     context_object_name = 'news'
@@ -37,12 +40,15 @@ class NewsSearch(ListView):
 
 
 class NewsDetail(DetailView):
+    raise_exception = True
     model = Post
     template_name = 'news_detail.html'
     context_object_name = 'news'
 
 
-class NewsCreate(CreateView):
+class NewsCreate(PermissionRequiredMixin, CreateView):
+    permission_required = ('news.add_post',)
+    raise_exception = True
     form_class = PostForm
     model = Post
     template_name = 'news_edit.html'
@@ -53,7 +59,9 @@ class NewsCreate(CreateView):
         return super().form_valid(form)
 
 
-class ArticlesCreate(CreateView):
+class ArticlesCreate(PermissionRequiredMixin, CreateView):
+    permission_required = ('news.add_post',)
+    raise_exception = True
     form_class = PostForm
     model = Post
     template_name = 'news_edit.html'
@@ -64,25 +72,33 @@ class ArticlesCreate(CreateView):
         return super().form_valid(form)
 
 
-class NewsUpdate(UpdateView):
+class NewsUpdate(PermissionRequiredMixin, UpdateView):
+    permission_required = ('news.edit_post', )
+    raise_exception = True
     form_class = PostForm
     model = Post
     template_name = 'news_edit.html'
 
 
-class ArticlesUpdate(UpdateView):
+class ArticlesUpdate(PermissionRequiredMixin, UpdateView):
+    permission_required = ('news.edit_post', )
+    raise_exception = True
     form_class = PostForm
     model = Post
     template_name = 'news_edit.html'
 
 
-class NewsDelete(DeleteView):
+class NewsDelete(PermissionRequiredMixin, DeleteView):
+    permission_required = ('news.delete_post', )
+    raise_exception = True
     model = Post
     template_name = 'news_delete.html'
     success_url = reverse_lazy('news_list')
 
 
-class ArticlesDelete(DeleteView):
+class ArticlesDelete(PermissionRequiredMixin, DeleteView):
+    permission_required = ('news.delete_post', )
+    raise_exception = True
     model = Post
     template_name = 'news_delete.html'
     success_url = reverse_lazy('news_list')
