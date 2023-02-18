@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'default.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block head %} {% endblock %}
+    <title>{% block title %} news search {% endblock %}</title>
+</head>
+<body>
+{% block content %}
+
+<form action="" method="get">
+   {{ filterset.form.as_p }}
+   <input type="submit" value="Найти" />
+</form>
+
+  {% for n in news %}
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{n.title}}</h5>
+        <p class='card-subtitle'>{{n.date_created|date:'d M Y'}}</p>
+        <p class="card-text">{{n.preview_text}}</p>
+        <a href="{% url 'news_detail' n.pk %}" class="btn btn-primary">Читать дальше</a>
+      </div>
+    </div>
+  {% endfor %}
+{% endblock %}
+</body>
+</html>

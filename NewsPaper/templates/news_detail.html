@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'default.html' %}
+{% load custom_filters %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block head %} {% endblock %}
+    <title>{% block title %} {{news.title}} {% endblock %}</title>
+</head>
+<body>
+{% block content %}
+<h2>Название: {{news.title}}</h2>
+<p>Дата создание: {{news.date_created}}</p>
+<h4>Текст: {{news.text|censor}}</h4>
+{% endblock %}
+</body>
+</html>
