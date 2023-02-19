@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="375bd126-407e-4f39-b382-0254410b568d" name="Changes" comment="ad1">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="375bd126-407e-4f39-b382-0254410b568d" name="Changes" comment="add html-page 403 error&#10;update default.html: if user is_authenticated add btn &quot;logout&quot; else: &quot;login&quot;&#10;update news_list.html: if permission change or delete add btn edit or delete post&#10;add settings for allauth">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPaper/NewsPaper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/NewsPaper/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPaper/NewsPaper/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/NewsPaper/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPaper/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,8 +85,32 @@
       <option name="project" value="LOCAL" />
       <updated>1676722827245</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add allauth&#10;add login from yandex">
+      <created>1676733558458</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676733558458</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added to last commit: add templates from allauth">
+      <created>1676733598643</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676733598643</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add html-page 403 error&#10;update default.html: if user is_authenticated add btn &quot;logout&quot; else: &quot;login&quot;&#10;update news_list.html: if permission change or delete add btn edit or delete post&#10;add settings for allauth">
+      <created>1676735989340</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676735989340</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -116,6 +138,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add app in github" />
     <MESSAGE value="ad1" />
-    <option name="LAST_COMMIT_MESSAGE" value="ad1" />
+    <MESSAGE value="add allauth&#10;add login from yandex" />
+    <MESSAGE value="added to last commit: add templates from allauth" />
+    <MESSAGE value="add html-page 403 error&#10;update default.html: if user is_authenticated add btn &quot;logout&quot; else: &quot;login&quot;&#10;update news_list.html: if permission change or delete add btn edit or delete post&#10;add settings for allauth" />
+    <option name="LAST_COMMIT_MESSAGE" value="add html-page 403 error&#10;update default.html: if user is_authenticated add btn &quot;logout&quot; else: &quot;login&quot;&#10;update news_list.html: if permission change or delete add btn edit or delete post&#10;add settings for allauth" />
   </component>
 </project>
