@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="375bd126-407e-4f39-b382-0254410b568d" name="Changes" comment="&#10;add admin models &quot;Subscription&quot;">
-      <change afterPath="$PROJECT_DIR$/NewsPaper/news/migrations/0002_subscription.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPaper/news/signals.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPaper/templates/post_created_email.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPaper/templates/subscriptions.html" afterDir="false" />
+    <list default="true" id="375bd126-407e-4f39-b382-0254410b568d" name="Changes" comment="add notify for subs">
+      <change afterPath="$PROJECT_DIR$/NewsPaper/news/management/commands/weeklynotify.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NewsPaper/templates/week_notify.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPaper/NewsPaper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/NewsPaper/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsPaper/NewsPaper/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/NewsPaper/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPaper/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPaper/news/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/news/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPaper/news/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/news/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPaper/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/news/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPaper/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/news/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPaper/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/news/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPaper/templates/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/templates/default.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +137,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676972227215</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add notify for subs">
+      <created>1677005734663</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677005734663</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add notify for subs">
+      <created>1677005742369</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1677005742369</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -183,6 +190,7 @@
     <MESSAGE value="add crispy form to news_edit.html" />
     <MESSAGE value="add settings for EMAIL&#10;add models &quot;Subscription&quot; in news apps&#10;add admin models &quot;Subscription&quot;" />
     <MESSAGE value="&#10;add admin models &quot;Subscription&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;add admin models &quot;Subscription&quot;" />
+    <MESSAGE value="add notify for subs" />
+    <option name="LAST_COMMIT_MESSAGE" value="add notify for subs" />
   </component>
 </project>

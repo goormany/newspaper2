@@ -59,6 +59,9 @@ INSTALLED_APPS = [
     # crispy_forms
     'crispy_forms',
     "crispy_bootstrap5",
+
+    # django_apscheduler
+    'django_apscheduler',
 ]
 
 MIDDLEWARE = [
@@ -182,3 +185,6 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
+APSCHEDULER_RUN_NOW_TIMEOUT = 25
