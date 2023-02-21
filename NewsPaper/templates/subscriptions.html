@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'default.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block head %} {% endblock %}
+    <title>{% block title %} subscriptions {% endblock %}</title>
+</head>
+<body>
+{% block content %}
+
+    {% for category in categories  %}
+        <p>
+            {{ category.name_category }}
+            <form method="post">
+                {% csrf_token %}
+                <input type="hidden" name="category_id" value="{{ category.id }}" />
+
+                {% if category.user_subscribed %}
+                    <button disabled>Подписаться</button>
+                    <button name="action" class="btn btn-danger" value="unsubscribe">Отписаться</button>
+                {% else %}
+                    <button name="action" class="btn btn-primary" value="subscribe">Подписаться</button>
+                    <button disabled>Отписаться</button>
+                {% endif %}
+            </form>
+        </p>
+    {% endfor %}
+{% endblock %}
+</body>
+</html>
