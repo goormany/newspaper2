@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="375bd126-407e-4f39-b382-0254410b568d" name="Changes" comment="add plugin .env&#10;use .env to settings.py">
+    <list default="true" id="375bd126-407e-4f39-b382-0254410b568d" name="Changes" comment="add crispy form to news_edit.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPaper/NewsPaper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/NewsPaper/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPaper/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewsPaper/templates/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/templates/account/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsPaper/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/news/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsPaper/templates/account/email/email_confirmation_message.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/templates/account/email/email_confirmation_message.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPaper/templates/news_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/templates/news_edit.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676801330130</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add crispy form to news_edit.html">
+      <created>1676967307685</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676967307685</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -151,6 +159,7 @@
     <MESSAGE value="added to last commit: add templates from allauth" />
     <MESSAGE value="add html-page 403 error&#10;update default.html: if user is_authenticated add btn &quot;logout&quot; else: &quot;login&quot;&#10;update news_list.html: if permission change or delete add btn edit or delete post&#10;add settings for allauth" />
     <MESSAGE value="add plugin .env&#10;use .env to settings.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="add plugin .env&#10;use .env to settings.py" />
+    <MESSAGE value="add crispy form to news_edit.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="add crispy form to news_edit.html" />
   </component>
 </project>
