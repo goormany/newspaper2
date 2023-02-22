@@ -17,7 +17,7 @@ def send_notif(preview, pk, title, subscribers):
     msg = EmailMultiAlternatives(
         subject=title,
         body='',
-        from_email="zarbot951@yandex.ru",
+        from_email=None,
         to=subscribers
     )
 
@@ -33,11 +33,11 @@ def notify_new_post_cateogry(sender, instance, **kwargs):
         subscribers = []
         for categorysss in categories:
             subscribers = Subscription.objects.filter(category=categorysss.id)
-            for s in subscribers:
-                mail = list(s.user.email)
-                print(mail)
+            subscribers = [s.user.email for s in subscribers]
+            # for s in subscribers:
+            #     mail = s.user.email
 
-            send_notif(instance.preview_text(), instance.pk, instance.title, mail)
+            send_notif(instance.preview_text(), instance.pk, instance.title, subscribers)
 
 
 

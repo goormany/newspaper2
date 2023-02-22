@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="375bd126-407e-4f39-b382-0254410b568d" name="Changes" comment="add notify for subs">
-      <change afterPath="$PROJECT_DIR$/NewsPaper/news/management/commands/weeklynotify.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NewsPaper/templates/week_notify.html" afterDir="false" />
+    <list default="true" id="375bd126-407e-4f39-b382-0254410b568d" name="Changes" comment="add weekly notify">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPaper/NewsPaper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/NewsPaper/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPaper/NewsPaper/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/NewsPaper/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewsPaper/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsPaper/news/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewsPaper/news/signals.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677005742369</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add weekly notify">
+      <created>1677009487356</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1677009487356</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -191,6 +197,7 @@
     <MESSAGE value="add settings for EMAIL&#10;add models &quot;Subscription&quot; in news apps&#10;add admin models &quot;Subscription&quot;" />
     <MESSAGE value="&#10;add admin models &quot;Subscription&quot;" />
     <MESSAGE value="add notify for subs" />
-    <option name="LAST_COMMIT_MESSAGE" value="add notify for subs" />
+    <MESSAGE value="add weekly notify" />
+    <option name="LAST_COMMIT_MESSAGE" value="add weekly notify" />
   </component>
 </project>
