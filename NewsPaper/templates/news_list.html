@@ -16,12 +16,6 @@
         <h5 class="card-title">{{n.title}}</h5>
         <p class='card-subtitle'>{{n.date_created|date:'d M Y'}}</p>
         <p class="card-text">{{n.preview_text|censor}}</p>
-<!--        <a href="{% url 'news_detail' n.pk %}" class="btn btn-primary">Читать дальше</a>-->
-<!--        <ul class="dropdown-menu">-->
-<!--            <li><a class="dropdown-item" href="{% url 'news_update' n.pk %}">Редактировать</a></li>-->
-<!--            <li><a class="dropdown-item" href="{% url 'news_delete' n.pk %}">Удалить</a></li>-->
-<!--        </ul>-->
-          <!-- Пример отдельной кнопки danger -->
         <div class="btn-group">
           <a type="button" href="{% url 'news_detail' n.pk %}" class="btn btn-primary">Читать дальше</a>
             {% if perms.news.change_post or perms.news.delete_post %}
