@@ -1,1 +1,2 @@
 /NewsPaper/.env
+/NewsPaper/cache/*.djcache
