@@ -161,7 +161,7 @@ LOGIN_REDIRECT_URL = "/news"
 LOGOUT_REDIRECT_URL = "/news"
 SIGNUP_REDIRECT_URL = "/accounts/login"
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = os.getenv('DEFAULT_EMAIL_ADDRESS')
@@ -188,3 +188,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
 APSCHEDULER_RUN_NOW_TIMEOUT = 25
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': os.path.join(BASE_DIR, 'cache'),
+        'TIMEOUT': 60,
+    }
+}

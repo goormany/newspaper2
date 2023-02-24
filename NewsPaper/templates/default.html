@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         {% load static %}
+        {% load cache %}
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -13,6 +14,7 @@
     </head>
     <body>
         <!-- Responsive navbar-->
+        {% cache 300 header %}
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="{% url 'news_list' %}">SkillFactory</a>
@@ -38,6 +40,7 @@
                 </div>
             </div>
         </nav>
+        {% endcache %}
         <!-- Page content-->
         <div class="container">
             <div class="text-center mt-5">
